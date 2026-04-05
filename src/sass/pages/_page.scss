@@ -1,0 +1,136 @@
+@use "../base/bootstrap" as *;
+.page {
+    main>div:last-of-type {
+        //    margin-top: lvw(50px, 1920, 40px, 320);
+        padding-bottom: lvw(50px, 1920, 40px, 320);
+    }
+    &-title {
+        text-align: center;
+        padding-bottom: lvw(80px, 1920, 40px, 320);
+        small {
+            display: block;
+            color: #B6DE3E;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: none;
+            letter-spacing: -0.6px;
+            line-height: 1.5;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+#pg-firstvisit{
+    .card{
+        border: $primary solid 1px;
+        border-radius: 0;
+        h2{
+            font-size: 16px;
+            letter-spacing: normal;
+            line-height: 20px;
+            color: $primary;
+            margin-top: 0;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .btn{
+        padding: 0;
+        &-primary{
+            span{
+                background-color: $third;
+            }
+        }
+    }
+}
+
+// Page About /////////////////////////////////////////////
+#pg-about{
+    .card{
+        border: 0;
+        &-body{
+            background-color: $light;
+        }
+    }
+}
+#fp-aboutcarousel{
+    .carousel {
+        height: 700px;
+        img{
+            height: 700px;
+            object-fit: cover;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+            background-color: $primary;
+            padding: 15px;
+            border-radius: 50px;
+        }
+    }
+}
+.captioned figure, figure.captioned {
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        figcaption{
+            margin-bottom: -5em;
+        }
+    }
+    figcaption{
+        color: #ffffff;
+        background-color: rgba(0,0,0,0.5);
+        transition: all ease-in-out .3s;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        line-height: 18px;
+        padding: 24px 10px;
+        letter-spacing: 0;
+    }
+}
+.class404{
+    span.h1{
+        font-size: 168px;
+    }
+    p.h1{
+        font-size: 37px;
+        &:after{
+            content: ' . . .';
+        }
+    }
+
+}
+a.member-title{
+    &:hover{
+        text-underline: none;
+        text-decoration: none;
+        h3{
+            color: #B6DE3E;
+            transition: all 0.3s ease;
+        }
+    }
+}
+.wp-block-spacer[style*="height:100px"]{
+    @include Mobile{
+        height: 40px !important;
+    }
+}
+.wp-block-spacer[style*="height:40px"]{
+    @include Mobile{
+        height: 20px !important;
+    }
+}
+
+.wp-block-image {
+    margin-bottom: 0;
+}
+.size-full{
+    display: block;
+    margin: auto;
+}

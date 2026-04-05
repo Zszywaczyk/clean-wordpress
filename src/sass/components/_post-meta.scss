@@ -1,0 +1,14 @@
+.post {
+    &-meta {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        margin-top: 5.6px;
+        color: #79932b;
+        &-sep {
+            margin: 0 5px;
+        }
+    }
+}

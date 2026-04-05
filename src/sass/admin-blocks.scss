@@ -1,0 +1,39 @@
+// $viewport: 1920;
+// //Utils - Funkcje sass, Mixiny, pomocnicze klasy i selektory
+// @import "utils/mixins";
+// @import "base/fonts";
+// @import "./node_modules/bootstrap/scss/functions";
+// @import "base/variables";
+// @import "./node_modules/bootstrap/scss/mixins";
+// @import "layout/typography";
+// .wp-block {
+//     font-family: Poppins, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//     font-size: 1rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     color: #212529;
+//     text-align: left;
+// }
+// // //Bloki - bloki z gutenberga
+// @import "blocks/wp_defaults";
+// @import "blocks/page_header";
+// @import "blocks/shape_content";
+// @import "blocks/content";
+// @import "blocks/hero";
+// @import "blocks/button";
+// @import "blocks/listHome";
+// @import "blocks/team_home";
+// @import "blocks/counter";
+// @import "blocks/offert";
+// @import "blocks/team_details";
+// @import "blocks/gallery";
+// @import "blocks/contact";
+// .wp-block {
+//     max-width: 1280px;
+// }
+// .wp-block p{
+//     margin: 0 0 1rem 0;
+// }
+// .container {
+//     min-width: auto;
+// }

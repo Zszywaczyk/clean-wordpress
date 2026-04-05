@@ -1,0 +1,31 @@
+.widget_categories,
+.widget_meta {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        &>li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            &:before {
+                color: #B6DE3E;
+                background-color: #ffffff;
+                content: '\e836';
+                font-family: 'fontello';
+                display: block;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                -webkit-border-radius: 0;
+                -ms-border-radius: 0;
+                border-radius: 0;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+    }
+}

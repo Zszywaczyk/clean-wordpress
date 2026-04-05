@@ -1,0 +1,36 @@
+.wp-block-table {
+    margin-bottom: 28px;
+    table {
+        width: 95%;
+        border-collapse: collapse;
+        th,
+        td {
+            border: 1px solid #fff;
+            padding: 15px;
+            vertical-align: middle;
+            font-size: 14px;
+            p {
+                font-size: 14px;
+            }
+        }
+        th {
+            border-color: #fff !important;
+            background: #B6DE3E;
+            color: #fff;
+            // font-weight: 400;
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: left;
+            font-weight: 500;
+        }
+        td {
+            color: #333;
+        }
+        tbody tr:nth-child(2n) td {
+            background: #f9f9f9;
+        }
+        tbody tr:hover td {
+            background: #e1ebb7 !important;
+        }
+    }
+}

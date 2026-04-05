@@ -1,0 +1,149 @@
+//From theme http://websmirno.site/medin/html/dentco-html/
+
+// 2. Theme Styles
+// 2.1 Typography
+@import 'theme/typography';
+@import 'theme/counters';
+// 2.2 Form Elements
+@import 'theme/form';
+// 2.3 Preloader
+@import 'theme/loader';
+// 2.4 Page Structure
+@import 'theme/structure';
+// 2.5 Header
+@import 'theme/header';
+// 2.6 Footer
+@import 'theme/footer';
+// 2.7 Main Slider
+@import 'theme/slider';
+// 2.8 Services
+@import 'theme/service-box';
+@import 'theme/service-card';
+@import 'theme/service-card-style2';
+@import 'theme/service-tabs';
+@import 'theme/service-single';
+@import 'theme/department-tabs';
+// 2.9 Special Offer
+@import 'theme/special-card';
+// 2.10 Banner
+@import 'theme/banner';
+// 2.11 FAQ
+@import 'theme/faq';
+// 2.12 Newsletter
+@import 'theme/newsletter';
+// 2.13 Modal
+@import 'theme/modal';
+// 2.14 Simple Slider
+@import 'theme/slider_gallery';
+// 2.15 Filters
+@import 'theme/filters';
+// 2.16 Review
+@import 'theme/rating-box';
+@import 'theme/review';
+@import 'theme/testimonial';
+// 2.17 Gallery
+@import 'theme/gallery';
+@import 'theme/smile-gallery';
+// 2.18 Slick Carousel
+@import 'theme/slick';
+// 2.19 Blog
+@import 'theme/blog';
+// 2.20 Calendar Skin
+@import 'theme/calendar';
+// 2.21 Contact Box
+@import 'theme/contact-box';
+// 2.22 Quick Links
+@import 'theme/quick_links';
+// 2.23 Schedule
+@import 'theme/schedule';
+@import 'theme/doctor-box';
+// 2.24 Doctop Box
+@import 'theme/doctor-page';
+// 2.25 Shop
+@import 'theme/shop';
+
+/*Override Theme styles*/
+.btn{
+  &-light{
+    border-color: #fff;
+    color: #fff;
+    padding: 5px 10px;
+    &:hover{
+      border-color: rgba(255,255,255,0.8);
+      background-color: #fff;
+      color: #444;
+    }
+  }
+}
+.header-icons{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0px;
+  padding-right: 0px;
+  a.icon {
+    font-size: 20px;
+    text-decoration: none;
+    color: #444;
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+  }
+  &:hover a.icon,
+  &.opened a.icon {
+    color: theme-color("primary");
+  }
+  @include media-breakpoint-up(lg) {
+    top: 0 !important;
+  }
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    right: 67px;
+    top: 25px;
+    margin-top: 5px;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 7px;
+    right: 45px;
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .header-icons {
+    position: absolute;
+    top: 24px;
+    right: 117px;
+  }
+  .header-icons [class*='icon-'] {
+    font-size: 28px;
+  }
+  .header-icons .header-icons {
+    margin-top: 0;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+}
+@include media-breakpoint-down(sm) {
+  .header-icons {
+    top: 24px;
+    right: 80px;
+    margin-top: -4px;
+  }
+  .header-icons [class*='icon-'] {
+    font-size: 18px;
+  }
+}
+#render-form {
+      width: 100%;
+      padding: 10px 12px !important;
+}
+.your-rate{
+  select{
+    width: auto;
+    color: #1e76bd;
+  }
+}

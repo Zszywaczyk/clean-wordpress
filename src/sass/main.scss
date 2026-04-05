@@ -1,0 +1,37 @@
+$viewport: 1920;
+//Bootstrap and overrides
+@import "base/bootstrap";
+//Utils - Funkcje sass, Mixiny, pomocnicze klasy i selektory
+@import "utils/mixins";
+//base - Biblioteki głowne
+@import "base/reset";
+@import "base/animations";
+//Layout - Nawigacja, grid, nagłówki, stopki, ogólne style formularzy
+@import "layout/body";
+@import "layout/typography";
+// @import "layout/footer";
+@import "layout/header";
+@import "layout/menu";
+@import "layout/hamburger";
+@import "layout/footer";
+@import "layout/copyrights";
+@import "layout/table";
+// Strony
+@import "pages/blog";
+@import "pages/singlepost";
+@import "pages/service";
+@import "pages/page";
+//Components - przyciski, okładki, rozwijane menu, itd.
+@import "components/widget_categories";
+@import "components/widget_search";
+@import "components/widget_tagscloud";
+@import "components/post";
+@import "components/post-meta";
+@import "components/singlepost-sidebar";
+@import "components/wpcf7-form";
+@import "components/wp-blocks";
+//Bloki - bloki z gutenberga
+@import "blocks/service_table";
+@import "blocks/services-columns";
+@import "blocks/services-list";
+//Pages - Style dla konkretnej podstrony

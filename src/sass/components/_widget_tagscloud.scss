@@ -1,0 +1,22 @@
+aside.widget_tag_cloud {
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            display: block;
+            padding: 8px 20px 8px;
+            margin: 0 5px 5px 0;
+            font-size: 17px!important;
+            line-height: 1.3;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-transform: lowercase;
+            color: #73727d;
+            background-color: #ffffff;
+            transition: background 0.3s ease, color 0.3s ease;
+            &:hover {
+                background-color: #B6DE3E;
+            }
+        }
+    }
+}

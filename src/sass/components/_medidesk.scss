@@ -1,0 +1,28 @@
+.ic {
+    &-phone {
+        &-icon {
+            height: 70px !important;
+            width: 70px !important;
+
+            img {
+                vertical-align: sub;
+            }
+        }
+    }
+    &-contact-box-fixed{
+        margin-right: -320px!important;
+        .icon{
+            height: 40px!important;
+            width: 40px!important;
+        }
+        &.active{
+            margin-right: -2px!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic-contact-box-fixed {
+        top: 60px;
+    }
+}

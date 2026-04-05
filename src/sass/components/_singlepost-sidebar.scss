@@ -1,0 +1,50 @@
+.singlepost-sidebar {
+    .h4 {
+        margin-bottom: 25px;
+        display: block;
+    }
+    .kontakt-chirurgia {
+        &-frame {
+            text-align: center;
+            border: 1px solid #B6DE3E;
+            padding: 10px lvw(25px, 1920, 10px, 776);
+        }
+        &-number {
+            font-weight: bold;
+            color: #b6de3e;
+            font-size: 25px;
+        }
+    }
+    &-wrapper {
+        display: flex;
+        &>div {
+            flex: 1;
+            box-sizing: border-box;
+            &:first-of-type {
+                padding-right: 30px;
+            }
+        }
+    }
+    &-title {
+        font-size: 25px;
+        line-height: 1;
+        margin-bottom: 15px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .singlepost-sidebar {
+        &-wrapper {
+            flex-wrap: wrap;
+            // width: 100%;
+            &>div {
+                flex: 100%;
+                &:first-of-type {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

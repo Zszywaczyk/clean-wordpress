@@ -1,0 +1,63 @@
+main {
+    .wp-block-columns,
+    .singlepost,
+    .wp-block-gallery,
+    .services-table,
+    p {
+        margin-bottom: 28px;
+    }
+    .wp-block-column {
+        figure:last-of-type,
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-buttons {
+    .wp-block-button {
+        margin-bottom: 28px;
+        position: relative;
+        background: #B6DE3E;
+        .wp-block-button__link {
+            color: #1d1d1d;
+            background: transparent!important;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: normal;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            padding: 18px 36px;
+            position: relative;
+            z-index: 1;
+        }
+        &:before {
+            content: '';
+            display: block;
+            background: linear-gradient(to right, #abdb78 50%, #B6DE3E 50%) no-repeat scroll right bottom / 210% 100% #B6DE3E;
+            background-size: 210% 100%;
+            background-position: right bottom;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+        &:hover:before {
+            background-position: left bottom;
+        }
+        &.large {
+            .wp-block-button__link {
+                padding: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+}

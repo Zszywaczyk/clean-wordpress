@@ -1,0 +1,475 @@
+@import "../base/variables";
+@use "../base/bootstrap" as *;
+//Section 1 //////////////////////////////////////
+#fp-carousel {
+    .carousel {
+
+        color: #96959c;
+        //height: 600px;
+
+        p {
+            color: $dark;
+        }
+
+        .btn {
+            padding: 0;
+        }
+
+        &-item {
+            img {
+                height: 700px;
+                object-fit: cover;
+                object-position: center center;
+                @include Mobile() {
+                    height: 400px;
+                }
+            }
+        }
+
+        .carousel-control-next-icon {
+            background-color: $dark;
+            opacity: 0.9;
+            height: 100px;
+        }
+
+        .carousel-control-prev-icon {
+            background-color: black;
+            opacity: 0.9;
+            height: 100px;
+        }
+
+        .cap-first {
+            top: 40%;
+            padding: 10px;
+            width: 505px;
+            height: fit-content;
+            border: solid 10px;
+            background-color: rgba(242, 242, 242, 0.9);
+            margin: auto;
+            height: min-content;
+
+            @include Mobile(){
+                width: 70%;
+                left: 0;
+                right: 0;
+                a{
+                    font-size: 12px;
+                    p{
+                        padding: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .cap-second {
+            top: 40%;
+            @include Mobile(){
+                top: 30%;
+                a{
+                    font-size: 14px;
+                    p{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .cap-third {
+            bottom: 20%;
+            @include Mobile(){
+                bottom: 10%;
+                a{
+                    font-size: 14px;
+                    p{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*  .btn{
+        border-radius: 0;
+      }
+
+      .btn-primary{
+        background-color: $color-primary;
+        border: 0;
+        &:hover, &:focus, &:active{
+          background-color: $color-primary !important;
+          opacity: 0.7;
+        }
+        span{
+          width: 60px;
+          height: 60px;
+          color: black;
+          margin: 0;
+        }
+        p{
+          color: white !important;
+          font-size: 18px !important;
+          font-weight: 500;
+        }
+      }*/
+
+}
+
+//Section 2 ///////////////////////////////////////////
+#fp-welcome {
+    .row {
+        align-items: center;
+    }
+
+    .col-md-5 {
+        margin-right: -20px;
+    }
+
+    .col-md-7 {
+        margin-left: -20px;
+        @include Mobile(){
+            margin-left: 0;
+        }
+        background-color: $light;
+        border: 15px solid white;
+    }
+    .welcome-right{
+        background-color: $light;
+        border: 15px solid white;
+    }
+
+}
+
+//Section 3 treatment ///////////////////////////////////////////
+@use "../base/animations";
+#fp-treatment {
+    color: $dark;
+    background: linear-gradient(to bottom, white 35%, $light 35%);
+
+    &.container {
+        max-width: 1200px;
+    }
+
+    .treatments {
+        span {
+            color: $dark;
+        }
+
+        a {
+            color: $dark;
+
+            &:hover {
+                color: $primary;
+                text-decoration: unset !important;
+                text-decoration-style: unset !important;
+                -webkit-text-decoration-style: unset !important;
+                -moz-text-decoration-style: unset !important;
+
+                & > p {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .half {
+        background-color: $light;
+    }
+
+    .card {
+        border: 0;
+
+        &-footer {
+            border: 0;
+            background-color: white;
+        }
+
+        &-title {
+            font-size: 22px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        &-img-link {
+
+            position: relative;
+
+            &:hover {
+                & > img {
+                    filter: brightness(50%);
+                }
+
+                &::before {
+                    content: '\e83C  \e83C  \e83C';
+                    font-size: 30px;
+                    position: absolute;
+                    top: 40%;
+                    font-family: 'fontello';
+                    //font-size: 20px;
+                    color: $primary;
+                    text-align: center;
+                    z-index: 1;
+                    animation: flipInY .5s;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//Section 4 Prices table///////////////////////////////////////////
+#fp-prices {
+    background-color: $light;
+
+    th {
+        background-color: $primary;
+        color: white;
+    }
+
+    tr {
+        &:hover {
+            background-color: rgba(182, 222, 62, 0.5);
+            //opacity: 0.5;
+        }
+    }
+
+}
+
+//Section 5 Opinions///////////////////////////////////////////
+#fp-opinions {
+    height: 886px;
+    background-position: center;
+    @include Mobile(){
+        height: 600px;
+    }
+
+    .col-right {
+        margin-top: 20%;
+    }
+
+    .carousel-inner {
+        p {
+            color: $dark;
+            /*justify-content: normal;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: move;
+            cursor: grab;
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+            &:active{
+              cursor: grabbing;
+              cursor: -moz-grabbing;
+              cursor: -webkit-grabbing;
+            }*/
+        }
+    }
+}
+
+//Section 6  Experts ///////////////////////////////////////////
+#fp-experts {
+    background-color: $light;
+    color: $dark;
+
+    .container {
+        max-width: 1300px;
+    }
+
+    img {
+        border: 18px solid white;
+    }
+
+    .right-col {
+        margin-top: -200px;
+
+        p {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            visibility: hidden;
+        }
+
+        a {
+            position: relative;
+            color: $dark;
+
+            &:hover {
+                & > img {
+                    opacity: 0.5;
+                }
+
+                & > p {
+                    visibility: visible;
+                }
+            }
+        }
+        @include Mobile(){
+            margin-top: 20px;
+        }
+
+    }
+
+    .d-grid {
+        display: grid;
+        place-items: center;
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+
+        }
+
+    }
+}
+
+//Section 7  FAQ ///////////////////////////////////////////
+#fp-faq {
+    color: $dark;
+
+    .card {
+        border: 0;
+
+        &-header {
+            border-top: 1px solid $gray-300;
+            background-color: white;
+            padding-left: 0;
+            padding-right: 0;
+            border-bottom: 0;
+
+            button {
+                padding-left: 0;
+                padding-right: 0;
+                h4{
+                    font-size: 20px;
+                    margin: 0;
+                    @include Mobile(){
+                        font-size: 18px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Section 8 Blog ///////////////////////////////////////////
+#fp-blog {
+    p {
+
+    }
+
+    .card {
+        border-radius: 0;
+        border: 0;
+        background-color: $third;
+
+        &-body{
+            padding-top: 40px;
+        }
+
+        &-title{
+            text-align: center;
+            margin-top: 0;
+            font-size: 20px;
+            letter-spacing: normal;
+            min-height: 110px;
+        }
+
+        &-header {
+            padding: 0;
+            height: 208px;
+            border: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &-img-link {
+                position: relative;
+                color: $dark;
+                border-radius: 0;
+
+                p {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    visibility: hidden;
+                    color: $primary;
+                }
+
+                &:hover {
+                    & > img {
+                        filter: brightness(50%);
+                    }
+
+                    &::before {
+                        content: '\e83C  \e83C  \e83C';
+                        position: absolute;
+                        font-size: 30px;
+                        top: -10px;
+                        font-family: 'fontello';
+                        //font-size: 20px;
+                        color: $primary;
+                        text-align: center;
+                        z-index: 1;
+                        animation: flipInY 0.5s;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &-footer{
+            text-align: center;
+            a{
+                color: $dark;
+                animation: 1s slideOutRight;
+                &:hover{
+                    color: $primary;
+                    span:before{
+                        animation: 1s arrowBounceRight 1;
+                    }
+                }
+            }
+            span{
+                color: $dark;
+                font-weight: 900;
+            }
+        }
+    }
+
+}
+
+//Section 9 ///////////////////////////////////////////
+#fp-help {
+
+}
+
+//Section 10 ///////////////////////////////////////////
+#fp-contact {
+    .btn{
+        padding: 0;
+        &-primary{
+            span{
+                background-color: $third;
+            }
+        }
+    }
+    .contact-elements{
+        font-size: 22px;
+        a{
+            color: $dark;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}

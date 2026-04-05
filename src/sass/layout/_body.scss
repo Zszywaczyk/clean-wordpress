@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #96959c;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.388;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    transition: color 0.3s ease;
+    cursor: pointer;
+    color: #b6de3e;
+}
+
+a img {
+    outline: none;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    opacity: 1;
+    transition: color 0.3s ease;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    transition: color 0.3s ease;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    transition: color 0.3s ease;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.paginations {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0;
+}

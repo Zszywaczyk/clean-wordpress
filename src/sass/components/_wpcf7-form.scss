@@ -1,0 +1,67 @@
+.wpcf7-form {
+    line-height: 1.5;
+    &-control {
+        box-sizing: border-box;
+        background: none;
+        border: 1px solid #B6DE3E;
+        width: 100%;
+        font-weight: 500;
+        letter-spacing: 0px;
+        padding: 15px lvw(30px, 1920, 10px, 320);
+        margin-bottom: 5px;
+        color: #b7b7b7;
+        outline: none!important;
+        transition: color 0.3s ease;
+        font-size: 14px;
+        &:focus {
+            color: #1d1d1d;
+        }
+        &.wpcf7-acceptance {
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+        &.wpcf7-file {
+            font-size: 13px !important;
+            cursor: pointer;
+            padding: 0;
+            border: none;
+        }
+    }
+}
+
+.wpcf7-submit {
+    background: #B6DE3E;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    min-width: 160px;
+}
+
+.wpcf7-list-item {
+    margin: 0!important;
+    label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        input {
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 13px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0em 1em;
+    padding: 0.3em 1em;
+    font-size: 14px;
+}
+
+// .sc_button_hover_slide_left {
+//     background: linear-gradient(to right, #abdb78 50%, #B6DE3E 50%) no-repeat scroll right bottom / 210% 100% #B6DE3E !important;
+// }

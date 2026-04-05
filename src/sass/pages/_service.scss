@@ -1,0 +1,14 @@
+.service {
+    >main {
+        order: 2;
+        padding-right: 0;
+        padding-left: lvw(40px, 1920, 30px, 991);
+    }
+    >aside {
+        order: 1
+    }
+    .singlepost-title {
+        margin-top: 0;
+        margin-bottom: lvw(35px, 1920, 20px, 320);
+    }
+}

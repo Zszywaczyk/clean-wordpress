@@ -1,0 +1,22 @@
+.icondiv{
+    background-color: #FFF;
+    width: 3.2em;
+    height: 3.2em;
+    border-radius: 50%;
+    max-width: 100%;
+    line-height: 2.15em;
+
+    text-align: center;
+    display: inline-block;
+    border: 2px solid transparent;
+    box-sizing: content-box;
+    position: relative;
+
+    span{
+        &:before{
+            font-size: 1.5em;
+            color: #b6de3e;
+            vertical-align: middle;
+        }
+    }
+}

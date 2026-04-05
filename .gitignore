@@ -1,0 +1,16 @@
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+*.log
+/node_modules/
+# /assets/main.js
+/assets/main.js.map
+/assets/style.css
+/assets/style.css.map
+assets/admin-blocks.css
+# assets/main.css
+assets/main.css.map
+*.map
